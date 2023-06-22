@@ -1,10 +1,13 @@
 #!/usr/bin/python3
-"""Defines an inherited list class MyList."""
+"""
+Write a function that write a text file (UTF8) and prints it to stdout:
+"""
 
 
-class MyList(list):
-    """Implements sorted printing for the built-in list class."""
-
-    def print_sorted(self):
-        """Print a list in sorted ascending order."""
-        print(sorted(self))
+def write_file(filename="", text=""):
+    """
+    Write a function that write a text file (UTF8) and prints it to stdout:
+    """
+    with open(filename, 'w') as f:
+        f.write(text)
+    return len(text)
