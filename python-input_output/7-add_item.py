@@ -17,4 +17,3 @@ except Exception:
     my_list = sys.argv[1:]
 finally:
     save_to_json_file(my_list, filename)
-    
