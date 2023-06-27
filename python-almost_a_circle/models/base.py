@@ -41,3 +41,10 @@ class Base:
         json_string = cls.to_json_string(dict_list)
         with open(filename, 'w') as file:
             file.write(json_string)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Return the deserialization of a JSON string."""
+        if json_string is None or json_string == "[]":
+            return []
+        return json.loads(json_string)
