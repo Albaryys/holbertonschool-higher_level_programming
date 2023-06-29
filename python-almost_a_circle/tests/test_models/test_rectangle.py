@@ -796,5 +796,5 @@ class TestRectangle_to_dictionary(unittest.TestCase):
         with self.assertRaises(TypeError):
             r.to_dictionary(1)
 
-if __name__ == "__main__":
-    unittest.main()
+        if __name__ == "__main__":
+            unittest.main()
